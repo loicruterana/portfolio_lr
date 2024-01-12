@@ -12,7 +12,7 @@ function App() {
       <div class="container">
           <div class="bokeh">
             {/* <img class= 'floaty' src ='/images/bokeh.png' alt='bokeh'/>
-            <img class= 'floaty2' src ='/images/bokeh.png' alt='boke'/>
+            <img class= 'floaty2' src ='/images/bokeh.png' alt='bokeh'/>
              */}
           </div>
           <div class="text">
