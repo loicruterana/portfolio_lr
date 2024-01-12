@@ -46,7 +46,7 @@
 
 .flareOverlay {
   position: fixed;
-  filter: blur(30px);
+  filter: blur(10px);
   top: 0;
   left: 0;
   /* z-index: 999; */
@@ -54,7 +54,7 @@
 
 .flare{
   position: fixed;
-  opacity: .5;
+  /* opacity: 1; */
   top: 0;
   left: 0;
   width: 100vw;
