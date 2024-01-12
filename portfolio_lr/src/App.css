@@ -52,6 +52,15 @@
   /* z-index: 999; */
 }
 
+.flareTransition {
+  position: fixed;
+  filter: blur(10px);
+  top: 0;
+  left: 0;
+  /* z-index: 999; */
+  animation: 10s anim-fade-in ease;
+}
+
 .flare{
   position: fixed;
   opacity: .7;
