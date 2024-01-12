@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css2?family=Federo&display=swap');
+.body {
+  font-family: Federo;
+  background-color: black;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  position: relative;
+}
+
+.floaty {
+  position: fixed;
+  color: white;
+  scale: .2;
+  top: 20px;
+  left: 20px;
+  filter : blur(50px);
+  z-index: 10000;
+  /* ajouter un effet blur avec hover */
+  transition: filter 0.3s ease;
+}
+
+.floaty2 {
+  position: fixed;
+  color: white;
+  scale: .5;
+  top: 10px;
+  right: 20px;
+  filter : blur(80px);
+  z-index: 10000;
+  /* ajouter un effet blur avec hover */
+  transition: filter 0.3s ease;
+}
+
+.floaty:hover {
+  /* unblur gradually*/
+  filter : blur(30px);
+}
+
+.floaty2:hover {
+  /* unblur gradually*/
+  filter : blur(20x);
+}
+
+.flareOverlay {
+  position: fixed;
+  filter: blur(30px);
+  top: 0;
+  left: 0;
+  /* z-index: 999; */
+}
+
+.flare{
+  position: fixed;
+  opacity: .5;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  filter: brightness(.3);
+}
+
+.noise::before{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh; 
+  content: "";
+  opacity: .03;
+  z-index: 1000;
+  pointer-events: none;
+  background: url(noise.gif); 
+}
+
+.container {
+  position: relative; 
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  overflow-y: scroll;
+  z-index: 1;
+}
+
+.text {
+  /* scale: .2; */
+  animation: 10s anim-fade-in ease;
+  margin-top: 900px;
+  margin-bottom: 300px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  /* font-size: 1rem; */
+  /* position: absolute; */
+}
+
+
+
+/* flipping class and key frames*/
+.flipx {
+  /* fade-in animation */
+  text-shadow: rgb(189, 189, 189) 0px 0px 3px;
+  animation: .2s anim-jumpy1 ease infinite;
+}
+@keyframes anim-jumpy1 {
+  0% {
+    transform: translate(0, 0)
+  }
+
+  50% {
+    transform: translate(0, -0.5px) 
+  }
+
+  100% {
+    transform: translate(0, 0) 
+  }
+
+}
+
+@keyframes anim-fade-in {
+  0% {
+    opacity: 0;
+  }
+
+  25% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.line{
+  scale: .2;
+  position: fixed;
+  right: 7vw;
+  /* overflow-y: hidden; */
+  animation: .2s anim-jumpy2 ease infinite;
+}
+
+
+
+@keyframes anim-jumpy2 {
+  0% {
+    transform: translate(0, 0)
+  }
+
+  50% {
+    transform: translate(-2px, 0) 
+  }
+
+  100% {
+    transform: translate(0, 0)
+  }
+}
+
+.jumpy{
+  animation: 3s anim-fade-in2 ease ;
+}
+
+@keyframes anim-fade-in2 {
+  0% {
+    transform: translate(800px, 0)
+  }
+
+  50% {
+    transform: translate(800px, 0) 
+  }
+
+  100% {
+    transform: translate(0, 0)
+  }
+}
+
+.navbar {
+  position: fixed;
+  right: 2vw;
+  display: flex;
+  flex-direction: column;
+  color: white;
+  font-size: 1vw;
+  bottom: 1vh;
+  animation: 10s anim-fade-in ease ;
+  text-shadow: rgb(189, 189, 189) 0px 0px 2px;
+}
+
+.nav {
+  animation: .3s anim-jumpy1 ease infinite;
+}
+
+.about {
+  /* position: absolute; */
+  /* top: 100vh; */
+  color: white;
+  font-size: 1rem;
+  margin: 100px 0 100px 0; 
+  width: 50%;
+  text-shadow: rgb(189, 189, 189) 0px 0px 2px;
+}
+
+
+
