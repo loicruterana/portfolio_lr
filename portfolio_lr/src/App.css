@@ -42,7 +42,7 @@
 
 .flareOverlay {
   position: fixed;
-  filter: blur(10px);
+  filter: blur(5px);
   top: 0;
   left: 0;
 }
