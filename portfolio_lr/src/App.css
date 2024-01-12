@@ -59,7 +59,7 @@
   left: 0;
   width: 100vw;
   height: 100vh;
-  filter: brightness(.3);
+  filter: brightness(.2);
 }
 
 .noise::before{
@@ -115,7 +115,7 @@
   }
 
   50% {
-    transform: translate(0, -0.5px) 
+    transform: translate(0, -0.3px) 
   }
 
   100% {
