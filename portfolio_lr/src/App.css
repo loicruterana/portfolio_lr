@@ -10,7 +10,7 @@
   position: relative;
 }
 
-.floaty {
+/* .floaty {
   position: fixed;
   color: white;
   scale: .2;
@@ -18,7 +18,6 @@
   left: 20px;
   filter : blur(50px);
   z-index: 10000;
-  /* ajouter un effet blur avec hover */
   transition: filter 0.3s ease;
 }
 
@@ -30,40 +29,33 @@
   right: 20px;
   filter : blur(80px);
   z-index: 10000;
-  /* ajouter un effet blur avec hover */
   transition: filter 0.3s ease;
 }
 
 .floaty:hover {
-  /* unblur gradually*/
   filter : blur(30px);
 }
 
 .floaty2:hover {
-  /* unblur gradually*/
   filter : blur(20x);
-}
+} */
 
 .flareOverlay {
   position: fixed;
   filter: blur(10px);
   top: 0;
   left: 0;
-  /* z-index: 999; */
 }
 
 .flareTransition {
   position: fixed;
-  filter: blur(10px);
   top: 0;
   left: 0;
-  /* z-index: 999; */
   animation: 10s anim-fade-in ease;
 }
 
 .flare{
   position: fixed;
-  opacity: .7;
   top: 0;
   left: 0;
   width: 100vw;
